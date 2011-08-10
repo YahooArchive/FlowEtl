@@ -215,11 +215,6 @@
                     <artifactId>maven-assembly-plugin</artifactId>
                     <version>2.2</version>
                 </plugin>
-                <plugin>
-                    <groupId>yahoo.yinst.yjava_maven_plugins_yinst</groupId>
-                    <artifactId>yjava_maven_plugins_yinst</artifactId>
-                    <version>0.2.5</version>
-                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
