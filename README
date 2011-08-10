@@ -1,0 +1,131 @@
+---
+
+This is a framework designed for the creation of testable components which can
+be interconnected via arbitrary inputs and outputs and those components can
+be executed in the correct order (inputs satisfied before running) automatically.
+This is useful since it aids developers in thinking in the paradigm where they plan components
+ahead of time, allowing for simpler reuse and refactoring later. At yahoo! this
+was created for a ETL like framework & pipeline, but its applications are not 
+limited to solely that, since the concept itself is generic.
+
+* Future developments
+   - Integrate more services
+   - Multi-threaded planning and execution
+   - More tests!
+   
+---
+
+The FlowEtl project uses several 3rd party open source libraries and tools.
+This file summarizes the tools used, their purpose, and the licenses under which
+they're released.
+
+---
+
+Except as specifically stated below, the 3rd party software packages are not
+distributed as part of this project, but instead are separately downloaded from
+the respective provider and built on the developer’s machine as a pre-build
+step. 
+
+* commons-io 2.0.1 (Apache license 2.0) 
+    - Commons IO is a library of utilities 
+      to assist with developing IO functionality. 
+    - https://commons.apache.org/io/
+    
+* json-simple 1.1 (Apache license 2.0)
+    - JSON.simple is a simple Java toolkit for JSON. 
+      You can use JSON.simple to encode or decode JSON text. 
+    - https://code.google.com/p/json-simple/
+    
+* commons-configuration 1.4 (Apache license 2.0) 
+    - Commons Configuration provides a generic configuration 
+      interface which enables a Java application
+      to read configuration data from a variety of sources. 
+    - https://commons.apache.org/configuration/
+    
+* commons-lang 2.6 (Apache license 2.0) 
+    - Commons Lang, a package of Java utility classes for 
+      the classes that are in java.lang's hierarchy, or are
+      considered to be so standard as to justify existence in java.lang. 
+    - https://commons.apache.org/lang/
+    
+* commons-httpclient 3.1 (Apache license 2.0) 
+    - Commons HttpClient is a library for client-side HTTP communication.
+    - http://hc.apache.org/httpclient-3.x/
+    
+* commons-collections 3.2.1 (Apache license 2.0)
+    - Types that extend and augment the Java Collections Framework.
+    - http://commons.apache.org/collections/
+    
+* commons-codec 1.4 (Apache license 2.0)
+    - Contains simple encoder and decoders for various formats
+      such as Base64 and Hexadecimal.
+    - http://commons.apache.org/codec/
+    
+* log4j 1.2.15 (Apache license 2.0)
+    - With log4j it is possible to enable logging at 
+      runtime without modifying the application binary. 
+      The log4j package is designed so that these statements 
+      can remain in shipped code without incurring a 
+      heavy performance cost. 
+    - https://logging.apache.org/
+    
+* commons-cli 1.1 (Apache license 2.0)
+    - Commons CLI provides a simple API for presenting, 
+      processing and validating a command line interface. 
+    - http://commons.apache.org/cli/
+    
+* commons-logging 1.1.1 (Apache license 2.0)
+    - Commons Logging is a thin adapter allowing 
+      configurable bridging to other, well known logging systems. 
+    - http://commons.apache.org/logging/
+    
+* xstream 1.3.1 (BSD-style license)
+    - XStream is a simple library to serialize objects to XML and back again.
+    - http://xstream.codehaus.org/
+    
+* xpp3 1.1.4c (Indiana University Extreme! Lab Software License)
+    - A stable XmlPull parsing engine that is based on ideas from XPP 
+      and in particular XPP2 but completely revised and 
+      rewritten to take the best advantage of latest JIT JVMs
+      such as Hotspot in JDK 1.4+.
+    - http://www.extreme.indiana.edu/xgws/xsoap/xpp/
+    
+* c3p0 0.9.0 (GNU Library or Lesser General Public License)
+    - c3p0 is an easy-to-use library for augmenting traditional 
+      (DriverManager-based) JDBC drivers with JNDI-bindable DataSources, 
+      including DataSources that implement Connection and Statement
+      Pooling, as described by the jdbc3 spec and jdbc2 std extension.
+    - http://sourceforge.net/projects/c3p0/
+    
+* mysql-connector-java 3.0.10 (GPLv2) 
+    - MySQL Connector/J is the official JDBC driver for MySQL.
+    - http://dev.mysql.com/downloads/connector/j/
+    
+* jgrapht 0.7.3 (GNU Lesser General Public License)
+    - JGraphT is a free Java graph library that provides 
+      mathematical graph-theory objects and algorithms.
+    - http://www.jgrapht.org/
+    
+---
+
+* GNU licenses
+    - https://www.gnu.org/licenses/
+    
+* Xstream license
+    - http://xstream.codehaus.org/license.html
+ 
+* Apache license 2.0
+    - https://www.apache.org/licenses/LICENSE-2.0.html
+    
+* xpp3 license
+    - http://www.extreme.indiana.edu/xgws/xsoap/PullParser/LICENSE.txt
+    
+---
+
+1. To compile just install maven and run mvn compile.
+2. To run tests run mvn test.
+3. To package run mvn package.
+4. To clean run mvn clean.
+
+---
+
